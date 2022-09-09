@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: zzangyou
-tagline: 美女程序员在线写码
+tagline: 凡心所向，素履所往
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -11,7 +11,7 @@ tagline: 美女程序员在线写码
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
-bgImageStyle: { height: "450px" }
+bgImageStyle: { height: "650px" }
 isShowTitleInHome: false
 actionText: Guide
 actionLink: /views/other/guide
@@ -23,3 +23,5 @@ features:
   - title: Tomorrow
     details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
 ---
+
+<NewFont />

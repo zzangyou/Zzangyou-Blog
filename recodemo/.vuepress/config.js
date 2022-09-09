@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "blo",
+  "title": "zzangyou",
   "description": "a cool blog",
   "dest": "public",
   "head": [
@@ -22,17 +22,17 @@ module.exports = {
   "themeConfig": {
     "nav": [
       {
-        "text": "Home",
+        "text": "主页",
         "link": "/",
         "icon": "reco-home"
       },
       {
-        "text": "TimeLine",
+        "text": "时间轴",
         "link": "/timeline/",
         "icon": "reco-date"
       },
       {
-        "text": "Docs",
+        "text": "留言板",
         "icon": "reco-message",
         "items": [
           {
@@ -42,7 +42,7 @@ module.exports = {
         ]
       },
       {
-        "text": "Contact",
+        "text": "关于",
         "icon": "reco-message",
         "items": [
           {
@@ -65,11 +65,11 @@ module.exports = {
     "blogConfig": {
       "category": {
         "location": 2,
-        "text": "Category"
+        "text": "分类"
       },
       "tag": {
         "location": 3,
-        "text": "Tag"
+        "text": "标签"
       }
     },
     "friendLink": [
@@ -97,5 +97,32 @@ module.exports = {
   },
   "markdown": {
     "lineNumbers": true
-  }
+  },
+  plugins: [
+    [
+      "@vuepress-reco/vuepress-plugin-bgm-player",
+      {
+        audios: [
+          // 本地文件示例
+          {
+            name: '回강남역 4번 출구',
+            artist: 'Plastic / Fallin` Dild',
+            url: 'https://assets.smallsunnyfox.com/music/2.mp3',
+            cover: 'https://p2.music.126.net/IPnqMCk8YaN9inwYV2bdgQ==/18774161044446693.jpg'
+          },
+         
+        ]
+      }], 
+      [
+        'cursor-effects',
+        {
+           size: 2, // size of the particle, default: 2
+           shape: 'star', // shape of the particle, default: 'star'
+           zIndex: 999999999, // z-index property of the canvas, default: 999999999
+        }
+     ],
+     ['go-top'],
+   
+   
+  ]
 }
