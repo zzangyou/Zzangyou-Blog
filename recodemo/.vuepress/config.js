@@ -121,8 +121,49 @@ module.exports = {
            zIndex: 999999999, // z-index property of the canvas, default: 999999999
         }
      ],
-     ['go-top'],
-   
-   
+    ['go-top'], 
+     [
+      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      {
+        theme: ["blackCat"],
+
+        modelStyle: {
+          position: "fixed",
+          left: "40px",
+          bottom: "75px",
+          opacity: "0.9",
+          zIndex: 99999
+        },
+        btnStyle:{
+          position: "fixed",
+          left: "10px",
+          bottom: "110px",
+          opacity: "0.9",
+          zIndex: 99999
+        },
+        messages:  {
+    welcome:'欢迎来到我的小窝',
+    home: '所有的为时已晚，其实都是恰逢其时',
+    theme: '好吧，希望你能喜欢我的其他小伙伴。',
+    close: '下次记得还要来看我噢'
+  },
+       messageStyle:{
+        position: "fixed",
+        left: '150px',
+        bottom: '200px'
+  }
+      }
+    ],
+    ['@vuepress/active-header-links', {
+      sidebarLinkSelector: '.sidebar-link',
+      headerAnchorSelector: '.header-anchor'
+    }],
+    ['@vuepress-reco/comments', {
+      solution: 'valine',
+      options: {
+        appId: 'j4iQmpSNziYUaivyJwO25Uir-gzGzoHsz',// your appId
+        appKey: '3VtzJ8zJ9wA0IKgNcRjTM4Fq', // your appKey
+      }
+    }]
   ]
 }

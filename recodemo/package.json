@@ -7,6 +7,7 @@
     "build": "vuepress build ."
   },
   "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.9.7",
     "vuepress": "^1.8.2",
     "vuepress-plugin-cursor-effects": "^1.1.4",
     "vuepress-theme-reco": "1.6.14"
@@ -14,6 +15,7 @@
   "description": "a cool blog",
   "dependencies": {
     "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
+    "@vuepress-reco/vuepress-plugin-comments": "^1.6.13",
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "vuepress-plugin-go-top": "^1.0.4"
   }
